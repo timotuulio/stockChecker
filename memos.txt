@@ -15,10 +15,10 @@ Done:
 
 
 
-
-
 Next up:
   Push everything to github
+    Everything in github but the auto-lockin not working.
+    Also two branches in git -,-
   Do something with react
   Do the last "answer for question C"
 
@@ -28,5 +28,5 @@ Next up:
 
   The Api finds data from a file. It needs to find it from somewhere else
     Maybe parsing the data somehow, so that the values are values and not strings with $ in it
-    
+
   Ask if that one stock is enough knowledge or it there should be more than that
