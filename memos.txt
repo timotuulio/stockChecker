@@ -1,0 +1,32 @@
+Use yarn:
+  yarn add helmet
+
+Start api:
+  node app
+    Use postman to try the api
+start frontend:
+  node node_modules/react-scripts/scripts/start.js
+
+
+Done:
+  The api can call for the date for highest volume and highest change in priceDate
+  The api can call for longest uptrend
+    Both are for the date range
+
+
+
+
+
+Next up:
+  Push everything to github
+  Do something with react
+  Do the last "answer for question C"
+
+  Some cleaning up would be good to do before returning the code
+    The api has dublicate code. I couldn't get the async fs.createReadStream working
+    Maybe some comments would work miles
+
+  The Api finds data from a file. It needs to find it from somewhere else
+    Maybe parsing the data somehow, so that the values are values and not strings with $ in it
+    
+  Ask if that one stock is enough knowledge or it there should be more than that
