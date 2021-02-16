@@ -5,17 +5,12 @@ import Body from './bodyComponent.js';
 import { BrowserRouter as Router, Route } from 'react-router-dom'
 
 function App() {
-  //const [page, setPage] = useState("0")
-  var state = {
-    page: "asd"
-  }
 
   return (
     <div>
       <Router>
-        <Header state="{state.page}"/>
-        <Body/>
-        <Route path="/asd" component={Header}/>
+        <Header/>
+        <Route exact path="/" component={Body}/>
       </Router>
     </div>
   );

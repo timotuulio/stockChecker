@@ -8,7 +8,7 @@ import {
     NavbarBrand,
     Nav
 } from 'reactstrap';
-import { BrowserRouter as Link } from 'react-router-dom'
+import { Link } from 'react-router-dom'
 
 function Header({page}) {
   //const [page, setPage] = useState("0")
@@ -29,7 +29,7 @@ function Header({page}) {
                       return <div>
                         <ButtonGroup className="mr-2">
                           <Link to={'/asd'}>
-                            <Button color="primary" onClick={() => page = "trend"}>Upward trends</Button>
+                            <Button color="primary">Upward trends</Button>
                           </Link>
                           <Button color="primary" onClick={() => page = "volume"}>Highest volume</Button>
                           <Button color="primary" onClick={() => page = "change"}>Highest change</Button>

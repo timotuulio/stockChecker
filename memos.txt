@@ -14,13 +14,12 @@ Done:
     Both are for the date range
 
 
-
 Next up:
-  Push everything to github
-    Everything in github but the auto-lockin not working.
-    Also two branches in git -,-
   Do something with react
+    Reactissa ei toistaseks oo state:ja, koska meinasin hoitaa noi linkeillä. localhost:3000/highest tjm
+    Linkit toimii
   Do the last "answer for question C"
+  api on rikki t: get:lle ei pitäis olla parametreja vaan ne pitäis tulla url:n kautta
 
   Some cleaning up would be good to do before returning the code
     The api has dublicate code. I couldn't get the async fs.createReadStream working
@@ -30,3 +29,9 @@ Next up:
     Maybe parsing the data somehow, so that the values are values and not strings with $ in it
 
   Ask if that one stock is enough knowledge or it there should be more than that
+
+
+Joku react-juttu:
+  <Header wasd={"wasd"}/>,
+  const [page, setPage] = useState("0")
+  onClick={() => setPage("change")}
