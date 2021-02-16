@@ -10,7 +10,7 @@ router.use(express.urlencoded({
 
 router.use(bodyParser.json());
 
-router.get('/upTrend', stockController.longestUpTrend);
+router.get('/upTrend:start:end', stockController.longestUpTrend);
 router.get('/highestChange', stockController.highestChange);
 
 module.exports = router;

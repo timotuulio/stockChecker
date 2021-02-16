@@ -35,11 +35,14 @@ const xssFilters = require('xss-filters');
 
 module.exports = {
     async longestUpTrend(req, res) {
+        console.log("Now we have longestUptrend call")
         const date = req.body;
-        var start = xssFilters.inHTMLData(date.start)
+        //var start = xssFilters.inHTMLData(date.start)
+        var start = xssFilters.inHTMLData(urlParams.get('start'))
         start = start.split(".")
         start = new Date(start[2], start[1]-1, start[0])
-        var end = xssFilters.inHTMLData(date.end)
+        //var end = xssFilters.inHTMLData(date.end)
+        var end = xssFilters.inHTMLData(urlParams.get('end'))
         end = end.split(".")
         end = new Date(end[2], end[0]-1, end[1])
         try {
@@ -76,6 +79,7 @@ module.exports = {
         res.send(resValue)
     },
     highestChange(req, res) {
+        console.log("Now we have highestChange call")
         const date = req.body;
         var start = xssFilters.inHTMLData(date.start)
         start = start.split(".")

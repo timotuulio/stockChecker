@@ -8,16 +8,17 @@ import {
     NavbarBrand,
     Nav
 } from 'reactstrap';
+import { BrowserRouter as Link } from 'react-router-dom'
 
-function Header() {
-  const page = usestate(0)
-
+function Header({page}) {
+  //const [page, setPage] = useState("0")
+  console.log(page)
   return (<Navbar sticky="top" style={{
           backgroundColor: '#2B3856'
       }}>
       <NavbarBrand style={{
               color: "#007bff"
-          }}>Paavos Boutique</NavbarBrand>
+          }}>Stock checker</NavbarBrand>
 
       <Nav className="mr-auto" navbar>
           <ButtonToolbar aria-label="Toolbar with button groups">
@@ -27,9 +28,12 @@ function Header() {
                   (() => {
                       return <div>
                         <ButtonGroup className="mr-2">
-                          <Button color="primary">Shop</Button>
-                          <Button color="primary">Profile</Button>
-                          <Button color="primary">Sell product</Button>
+                          <Link to={'/asd'}>
+                            <Button color="primary" onClick={() => page = "trend"}>Upward trends</Button>
+                          </Link>
+                          <Button color="primary" onClick={() => page = "volume"}>Highest volume</Button>
+                          <Button color="primary" onClick={() => page = "change"}>Highest change</Button>
+                          <Button color="primary" onClick={() => page = "something"}>page: {page}</Button>
                         </ButtonGroup>
                       </div>;
                   })()
