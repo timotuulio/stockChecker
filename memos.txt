@@ -19,10 +19,9 @@ Next up:
     Reactissa ei toistaseks oo state:ja, koska meinasin hoitaa noi linkeillä. localhost:3000/highest tjm
     Linkit toimii
   Do the last "answer for question C"
-  api on rikki t: get:lle ei pitäis olla parametreja vaan ne pitäis tulla url:n kautta
 
   Some cleaning up would be good to do before returning the code
-    The api has dublicate code. I couldn't get the async fs.createReadStream working
+    The api has dublicate code. At least the make dates out of parameters
     Maybe some comments would work miles
 
   The Api finds data from a file. It needs to find it from somewhere else
